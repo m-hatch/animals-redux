@@ -9,24 +9,17 @@ describe('zoo reducers', () => {
 
   test('adds a new animal', () => {
     const animal = { name: 'Dragon', isOpenToPublic: false },
-          action = { 
-            type: 'ADD_ANIMAL', 
-            animal
-          }
+          action = { type: 'ADD_ANIMAL', animal }
+
     expect(reducer([], action)).toEqual([animal])
   })
 
   test('sets animal public status', () => {
     const prevState = [{ name: 'Monkey', isOpenToPublic: false }],
-          nextState = [{ name: 'Monkey', isOpenToPublic: true }],
-          action = { 
-            type: 'SET_PUBLIC_STATUS', 
-            animal: { 
-              name: 'Monkey', 
-              isOpenToPublic: true 
-            }
-          }
-    expect(reducer(prevState, action)).toEqual(nextState)
+          animalState = { name: 'Monkey', isOpenToPublic: true },
+          action = { type: 'SET_PUBLIC_STATUS', animal: animalState }
+          
+    expect(reducer(prevState, action)).toEqual([animalState])
   })
 
   test('removes animal from zoo', () => {
