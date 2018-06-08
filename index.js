@@ -1,7 +1,9 @@
 const Redux = require('redux')
+const reducer = require('./reducers/zoo-reducer')
+const actions = require('./actions/zoo-actions')
 
 // create Redux store
-const zoo = Redux.createStore((state, action) => [])
+const zoo = Redux.createStore(reducer)
 
 // utility function to print state
 const printState = () => {
