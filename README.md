@@ -4,7 +4,7 @@ A simple Redux example in plain JavaScript.
 
 ## Purpose
 
-The purpose of this project is to understand the Redux implementation of Flux seperate from any additional framework or library. To learn more about these patterns, see the documentation below:
+The purpose of this example is to understand the Redux implementation of Flux seperate from any additional framework or library. To learn more about these patterns, see the documentation below:
 
 - [Redux][1]
 - [Flux][2]
