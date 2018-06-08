@@ -1,6 +1,13 @@
 # Animals-Redux
 
-A simple Redux example in plain JavaScript (i.e. no React!)
+A simple Redux example in plain JavaScript. 
+
+## Purpose
+
+The purpose of this project is to understand the Redux implementation of Flux seperate from any additional framework or library. To learn more about these patterns, see the documentation below:
+
+- [Redux][1]
+- [Flux][2]
 
 ## Objectives:
 
@@ -36,3 +43,6 @@ In project root run
 // watch changes
 
 `$ npm run watch`
+
+[1]: <https://redux.js.org/>
+[2]: <https://facebook.github.io/flux/docs/overview.html>
