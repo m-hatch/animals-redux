@@ -2,13 +2,20 @@ module.exports = (state = [], action = { type: null }) => {
   switch(action.type) {
 
     case 'ADD_ANIMAL':
-      return state
+      return !state.includes(action.animal) ? 
+        state.concat([action.animal]) :
+        state
 
     case 'SET_PUBLIC_STATUS':
-      return state
+      const newState = state.filter(animal => {
+        return animal.name !== action.animal.name
+      })
+      return newState.concat([action.animal])
 
     case 'REMOVE_ANIMAL':
-      return state
+      return state.filter(animal => {
+        return animal.name !== action.name
+      })
 
     default:
       return state
