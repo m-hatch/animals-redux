@@ -16,6 +16,8 @@ A simple Redux example in plain JavaScript (i.e. no React!)
 
 - Subscribe to the zoo and print the state on every state change
 
+- Create unit test coverage for the zoo
+
 
 ## Installation
 
